@@ -82,12 +82,70 @@ const NewNote = () => {
                             />
                             <Form.TextArea
                                 fluid
-                                label='Descriprtion'
+                                label='Description'
                                 placeholder='Description'
                                 name='description'
                                 error={errors.description ? { content: 'Please enter a description', pointing: 'below' } : null}
                                 onChange={handleChange}
                             />
+                            <Form.TextArea
+                                fluid
+                                label='video_Number'
+                                placeholder='video_number'
+                                name='video_number'
+                                error={errors.video_number ? { content: 'Please enter a description', pointing: 'below' } : null}
+                                onChange={handleChange}
+                            />
+                                                        <Form.TextArea
+                                fluid
+                                label='instructor_name'
+                                placeholder='instructor_name'
+                                name='instructor_name'
+                                error={errors.instructor_name ? { content: 'Please enter a description', pointing: 'below' } : null}
+                                onChange={handleChange}
+                            />
+                                                                                    <Form.TextArea
+                                fluid
+                                label='instructor_pfp'
+                                placeholder='instructor_pfp'
+                                name='instructor_pfp'
+                                error={errors.instructor_pfp ? { content: 'Please enter a description', pointing: 'below' } : null}
+                                onChange={handleChange}
+                            />
+                                                                                    <Form.TextArea
+                                fluid
+                                label='video_link'
+                                placeholder='video_link'
+                                name='video_link'
+                                error={errors.video_link ? { content: 'Please enter a description', pointing: 'below' } : null}
+                                onChange={handleChange}
+                            />
+                                                                                                                <Form.TextArea
+                                fluid
+                                label='category'
+                                placeholder='category'
+                                name='category'
+                                error={errors.category ? { content: 'Please enter a description', pointing: 'below' } : null}
+                                onChange={handleChange}
+                            />
+                            
+                            <Form.TextArea
+                                fluid
+                                label='previous_les'
+                                placeholder='previous_les'
+                                name='previous_les'
+                                error={errors.previous_les ? { content: 'Please enter a description', pointing: 'below' } : null}
+                                onChange={handleChange}
+                            />
+                                                        <Form.TextArea
+                                fluid
+                                label='next_les'
+                                placeholder='next_les'
+                                name='next_les'
+                                error={errors.previous_les ? { content: 'Please enter a description', pointing: 'below' } : null}
+                                onChange={handleChange}
+                            />
+                            
                             <Button type='submit'>Create</Button>
                         </Form>
                 }
